@@ -40,7 +40,7 @@ public class Parser {
                 reviewService.save(new Review(productId, userId, profileName, text));
             }
         } catch (IOException e) {
-            throw new RuntimeException("");
+            throw new RuntimeException("Can't find a csv file");
         }
     }
 }
